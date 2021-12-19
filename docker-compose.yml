@@ -12,9 +12,7 @@ services:
       - ./config.yml:/etc/influxdb2/config.yml
       # -./influxdb2-config:/etc/influxdb2
       # -./influxdb.conf:/root/influxdb/influxdb.conf
-    env_file:
-      # BE SURE TO CHANGE THIS LINE BEFORE GOING TO PRODUCTION
-      - ./local.env
+    env_file: ./local.env
     ports:
       - 8086:8086
     #network_mode: "bridge"
